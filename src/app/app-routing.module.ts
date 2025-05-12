@@ -11,6 +11,15 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  // Removed invalid route as the module './page/ataque/ataque.module' does not exist
+  {
+    path: 'ataque',
+    loadChildren: () => import('./ataque/ataque.module').then( m => m.AtaquePageModule)
+  },
+  {
+    path: 'ataque',
+    loadChildren: () => import('./ataque/ataque.module').then( m => m.AtaquePageModule)
+  },
 ];
 
 @NgModule({
