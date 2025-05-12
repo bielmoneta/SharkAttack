@@ -1,0 +1,7 @@
+{
+  "name": "SharkAttack",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
